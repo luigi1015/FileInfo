@@ -5,10 +5,9 @@ import static org.junit.Assert.*;
 
 public class FileInfoTest
 {
-/*
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
-*/
+	@Test public void testGetFileInfoMethod()
+	{
+		//TODO: Fill out code for this test
+		assertTrue( "getFileInfo should return info about a file", true );
+	}
 }
