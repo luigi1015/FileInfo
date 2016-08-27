@@ -18,6 +18,6 @@ public class FileDataTest
 		long fileSize = 100;
 		FileData fd = new FileData();
 		fd.setFileSize( fileSize );
-		assertTrue( "setFileSize should return the file size", fileSize != fd.getFileSize() );
+		assertTrue( "setFileSize should return the file size", fileSize == fd.getFileSize() );
 	}
 }
