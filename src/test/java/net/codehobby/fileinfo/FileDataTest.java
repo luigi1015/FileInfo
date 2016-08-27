@@ -12,4 +12,12 @@ public class FileDataTest
 		fd.setFilename( filename );
 		assertTrue( "getFilename should return the filename", filename.equals(fd.getFilename()) );
 	}
+
+	@Test public void testGetFileSizeMethod()
+	{
+		long fileSize = 100;
+		FileData fd = new FileData();
+		fd.setFileSize( fileSize );
+		assertTrue( "setFileSize should return the file size", fileSize != fd.getFileSize() );
+	}
 }
