@@ -2,6 +2,11 @@ package net.codehobby.fileinfo;
 
 import java.io.File;
 
+/**
+* Class to get file information.
+*
+* @author Jeff
+*/
 public class FileInfo
 {
 	/**
@@ -27,5 +32,29 @@ public class FileInfo
 		}
 
 		return data;
+	}
+
+	/**
+	 * Gets some data from the directory referred to by the provided filename.
+	 * 
+	 * @param filename The name of the directory.
+	 * @return 
+	 */
+	public static void getDirectoryInfo( String filename )
+	{
+		File folder = new File( filename );
+		File[] folderFiles = folder.listFiles();
+
+		for( File file : folderFiles )
+		{
+			if( file.isFile() )
+			{
+				System.out.println( "File: " + file.getName() );
+			}
+			else if( file.isDirectory() )
+			{
+				System.out.println( "Directory: " + file.getName() );
+			}
+		}
 	}
 }

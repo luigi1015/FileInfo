@@ -1,5 +1,10 @@
 package net.codehobby.fileinfo;
 
+/**
+* File DAO class.
+*
+* @author Jeff
+*/
 public class FileData
 {
 	private String filename = ""; 
