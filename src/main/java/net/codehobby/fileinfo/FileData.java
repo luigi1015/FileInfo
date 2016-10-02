@@ -30,7 +30,7 @@ public class FileData
 	/**
 	 * Sets the filename.
 	 * 
-	 * @param newFilename The nea filename value.
+	 * @param newFilename The new filename value.
 	 */
 	public void setFilename( String newFilename )
 	{
